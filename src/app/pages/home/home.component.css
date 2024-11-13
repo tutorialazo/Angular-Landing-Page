@@ -1,0 +1,46 @@
+.home-section {
+  background-image: url('https://www.ikomiperu.com/assets/img/hero-bg.png'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurecimiento de fondo */
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2; /* Encima del oscurecimiento */
+}
+
+.container h1,
+.container h2,
+.container p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.display-4 {
+  font-size: 2.5rem; /* Tamaño del título */
+}
+
+.h5 {
+  font-size: 1.2rem;
+}
+
+.lead {
+  font-size: 1rem;
+  font-weight: 300;
+}

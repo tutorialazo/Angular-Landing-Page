@@ -1,0 +1,22 @@
+<section id="brands" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">MARCAS</h2>
+    <p class="text-center mb-5">
+      Contamos con las marcas más reconocidas en el mercado nacional e internacional especializadas en la fabricación de repuestos para vehículos con altos estándares de calidad.
+    </p>
+    <div class="row">
+      <!-- Tarjetas dinámicas -->
+      <div class="col-md-6 col-lg-4 mb-4" *ngFor="let brand of brands">
+        <div class="card bg-light text-dark">
+          <div class="card-header text-center bg-transparent">
+            <img [src]="brand.logo" alt="{{ brand.name }}" class="brand-logo">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">{{ brand.name }}</h5>
+            <p class="card-text">{{ brand.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

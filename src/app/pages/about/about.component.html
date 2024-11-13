@@ -1,0 +1,87 @@
+<!--Slider de marca-->
+<section id="brand-slider" class="py-5">
+  <div class="container">
+    <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Contenido del carrusel dinámico -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <img *ngFor="let img of images" [src]="img" class="d-block mx-3" alt="Brand">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Nosotros-->
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Sobre Nosotros</h2>
+    <p class="text-center mb-5">Somos una empresa importadora de repuestos con amplia experiencia en el mercado.</p>
+    <!-- Tarjetas (Equipo, Almacén, Tienda, Empresa) -->
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4 mb-4" *ngFor="let card of cards">
+        <div class="card">
+          <img [src]="card.image" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ card.title }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-dark py-5">
+  <div class="container">
+    <div class="info-section bg-dark text-white py-5 px-4">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-white">HISTORIA</h3>
+          <p>
+            IKOMI PERÚ es una compañía dedicada a la importación y comercialización de repuestos automotrices al por mayor y por menor para vehículos medianos y pesados de las principales marcas de origen koreano y japonés.
+          </p>
+          <p>
+            Nuestra empresa viene satisfaciendo las necesidades del rubro a nivel nacional desde 2009, cumpliendo con los estándares de calidad, seguridad y sostenibilidad que el mercado actual demanda.
+          </p>
+          <p>
+            IKOMI PERÚ, además de 15 años de presencia en el mercado peruano, cuenta con el respaldo de sus más de 3000 clientes y se posiciona como una de las empresas más destacadas en el rubro a nivel nacional.
+          </p>
+        </div>
+  
+        <div class="col row ">
+          <!-- Misión -->
+          <div class="col-md-6 col-lg-6">
+            <h5><i class="material-icons text-danger">assignment</i> Misión</h5>
+            <p>
+              En IKOMI PERÚ, nos comprometemos a satisfacer a nuestros clientes a través de colaboradores capacitados y mejora continua en la cadena de suministro. Valoramos la responsabilidad social y sostenibilidad.
+            </p>
+          </div>
+          <!-- Visión -->
+          <div class="col-md-6 col-lg-6">
+            <h5><i class="material-icons text-danger">visibility</i> Visión</h5>
+            <p>
+              En IKOMI PERÚ, buscamos ser líderes reconocidos en el rubro automotriz, destacándonos por la calidad de nuestros productos y servicios, impulsados por la innovación constante y la excelencia en la satisfacción del cliente.
+            </p>
+          </div>
+          <!-- Proveedores -->
+          <div class="col-md-6 col-lg-6">
+            <h5><i class="material-icons text-danger">local_shipping</i> Proveedores</h5>
+            <p>
+              Entre nuestros proveedores se encuentran las mejores compañías de manufactura a nivel global, certificadas con ISO 9001, lo que nos permite ofrecer un amplio stock de productos de calidad.
+            </p>
+          </div>
+          <!-- Logística -->
+          <div class="col-md-6 col-lg-6">
+            <h5><i class="material-icons text-danger">support</i> Logística</h5>
+            <p>
+              La logística es indispensable para IKOMI PERÚ, ayudándonos a ser eficientes y competitivos en el almacenamiento y distribución de pedidos de repuestos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

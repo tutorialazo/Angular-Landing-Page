@@ -1,0 +1,48 @@
+#brand-slider {
+  background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.carousel-item img {
+  height: 100px;
+  object-fit: contain; /* Ajusta las imágenes sin distorsión */
+}
+
+.carousel-indicators button {
+  background-color: #ff4a4a; /* Color rojo para los indicadores */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Asegura que los íconos sean visibles */
+}
+
+
+
+
+
+/*PRINCIPAL*/
+.about-section {
+  background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.card {
+  border: none; /* Sin borde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover; /* Asegura que las imágenes mantengan proporción */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #113ac2;
+}

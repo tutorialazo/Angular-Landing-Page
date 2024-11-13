@@ -1,0 +1,33 @@
+<section id="products" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">NUESTROS PRODUCTOS</h2>
+    <p class="text-center mb-5">Los mejores productos y precios.</p>
+
+    <!-- Categorías -->
+    <div class="text-center mb-4">
+      <button class="btn btn-category" 
+              [class.active]="selectedCategory === 'all'" 
+              (click)="filterProducts('all')">
+              DISCO, PLATO Y COLLARÍN DE EMBRAGUE
+      </button>
+      <button class="btn btn-category" 
+              *ngFor="let category of categorias" 
+              [class.active]="selectedCategory === category.id" 
+              (click)="filterProducts(category.id)">
+        {{ category.name }}
+      </button>
+    </div>
+
+    <!-- Productos -->
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let product of filteredProducts">
+        <div class="card product-card">
+          <img [src]="product.image" class="card-img-top" [alt]="product.name">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

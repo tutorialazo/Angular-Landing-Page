@@ -1,0 +1,66 @@
+<!--Datos-->
+<section>
+  <div class="container">
+    <div class="row text-center">
+      <!-- Tarjeta de estadística -->
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="material-icons text-danger">emoji_emotions</i>
+          </div>
+          <h3 class="stat-number">232</h3>
+          <p class="stat-label">Clientes Satisfechos</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="material-icons text-danger">list_alt</i>
+          </div>
+          <h3 class="stat-number">521</h3>
+          <p class="stat-label">Proyectos</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="material-icons text-danger">shopping_bag</i>
+          </div>
+          <h3 class="stat-number">1463</h3>
+          <p class="stat-label">Ventas</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="material-icons text-danger">groups</i>
+          </div>
+          <h3 class="stat-number">15</h3>
+          <p class="stat-label">Asesoría</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="services" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">SERVICIOS</h2>
+    <p class="text-center mb-5">Estamos listos para atenderte.</p>
+    <div class="row">
+      <!-- Tarjeta de Servicio -->
+      <div class="col-md-6 col-lg-6 mb-4" *ngFor="let service of services">
+        <div class="service-card p-3 d-flex align-items-center">
+          <div class="icon-container me-3">
+            <i class="material-icons text-danger">{{ service.icon }}</i>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">{{ service.title }}</h5>
+            <p class="mb-0">{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

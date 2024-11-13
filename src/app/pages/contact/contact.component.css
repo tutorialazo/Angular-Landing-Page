@@ -1,0 +1,30 @@
+#contact {
+  background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+h2 {
+  font-weight: bold;
+}
+
+iframe {
+  border-radius: 8px; /* Bordes redondeados para el mapa */
+}
+
+form input,
+form textarea {
+  border-radius: 8px; /* Bordes redondeados en inputs */
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #d9534f; /* Rojo */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #c9302c; /* Más oscuro al pasar el mouse */
+}

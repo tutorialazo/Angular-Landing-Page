@@ -1,0 +1,28 @@
+.navbar {
+  background-color: rgba(17, 58, 194, 0.9); /* Fondo semi-transparente */
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  position: absolute; /* Por defecto, es absoluto */
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar.scrolled {
+  position: fixed; /* Se convierte en fijo al hacer scroll */
+  top: 0;
+  background-color: rgba(17, 58, 194, 1); /* Fondo sólido al hacer scroll */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #fdda44 !important; /* Color amarillo al pasar el mouse */
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Para ser visible en fondo oscuro */
+}

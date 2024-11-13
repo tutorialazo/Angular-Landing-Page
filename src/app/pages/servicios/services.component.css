@@ -1,0 +1,76 @@
+#stats {
+  background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+  background: rgba(255, 0, 0, 0.1); /* Fondo rojo claro */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+.stat-icon i {
+  font-size: 30px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6c757d; /* Gris oscuro */
+  margin: 0;
+}
+
+
+
+
+/*SERVICIOS*/
+#services {
+  background-color: #222; /* Fondo negro */
+}
+
+.service-card {
+  background-color: #333; /* Fondo más claro para contraste */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.service-card i {
+  font-size: 2rem;
+}
+
+.service-card h5 {
+  font-size: 1.2rem;
+  color: #fff; /* Texto blanco */
+}
+
+.service-card p {
+  color: #ccc; /* Texto gris claro */
+}
